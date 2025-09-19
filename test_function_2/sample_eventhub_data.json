@@ -1,0 +1,84 @@
+{
+  "sample_eventhub_messages": [
+    {
+      "id": "device-001",
+      "name": "Temperature Sensor A1",
+      "description": "IoT temperature sensor in building A",
+      "category": "sensors",
+      "deviceType": "temperature",
+      "location": "Building A - Floor 1",
+      "data": {
+        "temperature": 22.5,
+        "humidity": 45.2,
+        "timestamp": "2025-09-18T10:30:00Z",
+        "unit": "celsius",
+        "batteryLevel": 85
+      }
+    },
+    {
+      "id": "device-002", 
+      "name": "Motion Detector B2",
+      "description": "Motion sensor for security monitoring",
+      "category": "security",
+      "deviceType": "motion",
+      "location": "Building B - Floor 2",
+      "data": {
+        "motionDetected": true,
+        "timestamp": "2025-09-18T10:31:15Z",
+        "confidence": 0.95,
+        "zone": "entrance"
+      }
+    },
+    {
+      "id": "device-003",
+      "name": "Smart Meter C1",
+      "description": "Electricity consumption meter",
+      "category": "utilities",
+      "deviceType": "meter",
+      "location": "Building C - Utility Room",
+      "data": {
+        "consumption": 1250.75,
+        "unit": "kWh", 
+        "timestamp": "2025-09-18T10:32:00Z",
+        "rate": "peak",
+        "cost": 187.61
+      }
+    },
+    {
+      "name": "Pressure Sensor Without ID",
+      "description": "This message has no ID - function will generate one",
+      "category": "sensors",
+      "deviceType": "pressure",
+      "location": "Pipeline Section 5",
+      "data": {
+        "pressure": 145.3,
+        "unit": "psi",
+        "timestamp": "2025-09-18T10:33:00Z",
+        "status": "normal"
+      }
+    },
+    {
+      "id": "device-005",
+      "name": "GPS Tracker Fleet-07",
+      "description": "Vehicle tracking device",
+      "category": "logistics",
+      "deviceType": "gps",
+      "location": "Vehicle Fleet-07",
+      "data": {
+        "latitude": 47.6062,
+        "longitude": -122.3321,
+        "speed": 35.5,
+        "heading": 182,
+        "timestamp": "2025-09-18T10:34:00Z",
+        "fuel": 75.2
+      }
+    }
+  ],
+  "malformed_messages": [
+    "This is not JSON",
+    123,
+    [],
+    null,
+    "{\"incomplete\": json"
+  ]
+}
