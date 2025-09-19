@@ -1,0 +1,6 @@
+# Azure Functions for Python
+azure-functions>=1.18.0
+azure-cosmos>=4.5.0
+
+# Optional: for better JSON handling and HTTP requests
+requests>=2.31.0

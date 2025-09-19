@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Azure Functions artifacts
+bin
+obj
+csx
+.vs
+edge
+Publish
+
+# Azure Functions specific
+*.user
+*.suo
+*.cscfg
+*.Cache
+project.lock.json
+appsettings.json
+local.settings.json
+
+# Sensitive data and secrets
+/secrets
+/data
+.secrets
+
+# Python virtual environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python packages
+.python_packages/
+
+# Node.js
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Azure Tools
+.azure/
+
+# Test artifacts
+/packages
+/TestResults
+
+# Azurite storage emulator
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json
+
+# Function App Zip packages
+*.zip
+
+# Backup files
+*.bak
+*.backup
+
+# Data files (protecting sample data that might contain sensitive info)
+*.dat

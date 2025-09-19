@@ -1,0 +1,43 @@
+{
+  "sample_items": [
+    {
+      "id": "item-001",
+      "name": "Test Product 1",
+      "description": "This is a test product for Cosmos DB",
+      "category": "Electronics",
+      "price": 99.99,
+      "data": {
+        "brand": "TestBrand",
+        "model": "TB-001",
+        "specifications": {
+          "color": "Blue",
+          "weight": "1.2kg"
+        }
+      }
+    },
+    {
+      "id": "item-002",
+      "name": "Test Product 2",
+      "description": "Another test product",
+      "category": "Books",
+      "price": 19.99,
+      "data": {
+        "author": "Test Author",
+        "isbn": "123-456-789",
+        "pages": 250
+      }
+    },
+    {
+      "id": "item-003",
+      "name": "Test Service",
+      "description": "A test service entry",
+      "category": "Services",
+      "price": 149.99,
+      "data": {
+        "duration": "2 hours",
+        "location": "Online",
+        "requirements": ["Internet connection", "Computer"]
+      }
+    }
+  ]
+}
