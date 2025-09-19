@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=YOUR_STORAGE_ACCOUNT;AccountKey=YOUR_STORAGE_KEY;EndpointSuffix=core.windows.net",
+    "EventHubConnectionString": "Endpoint=sb://YOUR_EVENTHUB_NAMESPACE.servicebus.windows.net/;SharedAccessKeyName=YOUR_POLICY_NAME;SharedAccessKey=YOUR_SHARED_ACCESS_KEY;EntityPath=YOUR_EVENTHUB_NAME",
+    "CosmosDBConnectionString": "AccountEndpoint=https://YOUR_COSMOSDB_ACCOUNT.documents.azure.com:443/;AccountKey=YOUR_COSMOSDB_KEY;",
+    "CosmosDBName": "YOUR_DATABASE_NAME",
+    "CosmosDBContainer": "YOUR_CONTAINER_NAME"
+  }
+}

@@ -1,0 +1,136 @@
+# Azure Functions - Root Level .gitignore
+# This file protects sensitive information across all Azure Functions projects
+
+# ========================================
+# Azure Functions Specific
+# ========================================
+# Local development settings (contains connection strings, secrets)
+**/local.settings.json
+**/appsettings.json
+
+# Azure Functions runtime artifacts
+**/bin/
+**/obj/
+**/csx/
+**/.vs/
+**/edge/
+**/Publish/
+
+# Function App deployment packages
+**/*.zip
+
+# ========================================
+# Python Specific
+# ========================================
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Python virtual environments
+**/.env
+**/.venv
+**/env/
+**/venv/
+**/ENV/
+**/env.bak/
+**/venv.bak/
+
+# Python packages
+**/.python_packages/
+
+# ========================================
+# Development Tools & IDEs
+# ========================================
+# Visual Studio Code
+**/.vscode/
+# IntelliJ IDEA
+**/.idea/
+# Visual Studio
+**/.vs/
+
+# ========================================
+# Dependencies & Packages
+# ========================================
+# Node.js
+**/node_modules/
+**/dist/
+
+# .NET
+**/packages/
+**/TestResults/
+**/*.user
+**/*.suo
+**/*.cscfg
+**/*.Cache
+**/project.lock.json
+
+# ========================================
+# Secrets & Sensitive Data
+# ========================================
+# Secret directories and files
+**/secrets/
+**/data/
+**/.secrets
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+
+# Environment files that might contain secrets
+**/.env.*
+!**/.env.example
+!**/.env.template
+
+# ========================================
+# Logs & Temporary Files
+# ========================================
+**/*.log
+**/*.tmp
+**/*.temp
+
+# ========================================
+# Operating System
+# ========================================
+# macOS
+**/.DS_Store
+# Windows
+**/Thumbs.db
+**/Desktop.ini
+
+# ========================================
+# Azure Tools & Services
+# ========================================
+# Azure CLI configuration
+**/.azure/
+
+# Azurite storage emulator
+**/__blobstorage__/
+**/__queuestorage__/
+**/__azurite_db*__.json
+
+# ========================================
+# Backup Files
+# ========================================
+**/*.bak
+**/*.backup
+**/*.old
+**/*~
+**/local.settings.json.bak
+**/appsettings.json.bak
+
+# ========================================
+# Data Files (potentially sensitive)
+# ========================================
+**/*.dat
+**/*.csv
+!**/sample*.csv
+!**/test*.csv
+!**/demo*.csv
+
+# ========================================
+# Git & Version Control
+# ========================================
+# Git hooks
+**/.git/hooks/*
+!**/.git/hooks/*.sample
